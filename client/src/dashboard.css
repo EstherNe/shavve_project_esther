@@ -1,0 +1,123 @@
+/* Dashboard.css */
+
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: #f5f5f5; /* צבע רקע כללי לדף */
+  }
+  
+  .sidebar {
+    width: 25%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-right: 2px solid #dddddd;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+    min-height: 600px; /* גובה מינימלי כדי לשמור על יציבות */
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    color: #333333;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sidebar button {
+    background-color: #ff4d4d;
+    border: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    width: 75%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .button-container button {
+    background-color: #28a745;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .button-container button:last-child {
+    margin-right: 0;
+  }
+  
+  .components-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .stock-chart-container,
+  .stock-table-container,
+  .crypto-data-container {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-height: 300px; 
+    max-height: 600px;
+    overflow: auto; 
+  }
+  
+  .stock-chart-container {
+    flex: 2;
+  }
+  
+  .crypto-data-container {
+    flex: 1;
+  }
+  
+  .stock-table-container {
+    flex: 1;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .item {
+    flex: 1 1 30%;
+    margin: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .item {
+      flex: 1 1 100%;
+    }
+  }
+  
