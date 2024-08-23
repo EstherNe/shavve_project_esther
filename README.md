@@ -1,4 +1,4 @@
 to run server:
 npm run start
-torun client:
+to run client:
 npm run dev
